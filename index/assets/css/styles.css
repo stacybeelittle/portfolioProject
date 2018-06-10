@@ -33,7 +33,7 @@ body {
     background-color: #fffff1;
 }
 
-.content-header, .featured-proj {
+.content-header, .featured-item {
     text-align: center;
 }
 
@@ -42,17 +42,12 @@ body {
     margin-bottom: 30px;
 }
 
-
-.current-projects {
+.featured-work {
     margin-top: 30px;
 }
 
-.featured-proj {
+.featured-item {
     margin: 20px 0;
-}
-
-.sub-title {
-    font: bolder;
 }
 
 @media screen and (min-width: 480px) {
@@ -87,10 +82,10 @@ body {
     .featured {
         margin: 30px auto 0;
     }
-    .featured-proj {
+    .featured-item {
         margin: 20px 20px 20px 0;
     }
-    .featured-proj:last-child {
+    .featured-item:last-child {
         margin-right: 0;
     }
 }
