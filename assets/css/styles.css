@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.gradient {
+    background: linear-gradient(to top right, #D27979, #40B6BF);
+}
+
 
 .responsive-image {
     height: auto;
@@ -26,9 +30,7 @@
     text-align: center;
 }
 
-body {
-    background-color: #fffff1;
-}
+
 
 .content-header, .featured-proj {
     text-align: center;
