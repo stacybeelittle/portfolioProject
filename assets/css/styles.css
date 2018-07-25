@@ -17,14 +17,14 @@
 
 
 .text-item {
-    color: #A83731;
+    color: #dd9242;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 7vw;
     font-weight: bold;
 }
 
 .text-item-header {
-    color: #832A0D;
+    color: #dd4542;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10vw;
     text-align: center;
@@ -36,6 +36,7 @@
     text-align: center;
 }
 
+
 .header {
     text-align: center;
     margin-bottom: 30px;
@@ -45,6 +46,12 @@
 .current-projects {
     margin-top: 30px;
 }
+
+.current-proj-hdr {
+    color: #043899;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
+    text-align: center;}
 
 .featured-proj {
     margin: 20px 0;
