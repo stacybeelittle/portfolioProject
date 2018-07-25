@@ -4,18 +4,66 @@
     margin: 0;
     padding: 0;
 }
+/*notes -
+one hard pulse of header-name
+hover effect on project names, also link to proj in name
+4 color animation effect on 'current projects'
+*/
+
+.content-header, .featured-proj {
+    text-align: center;
+}
+
+.current-projects {
+    margin-top: 30px;
+}
+
+.current-proj-hdr {
+    color: #020914;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.featured-proj {
+    margin: 20px 0;
+}
+
+.featured-text {
+    font-weight: bold;
+    font-size: 2rem;
+}
 
 .gradient {
     background: linear-gradient(to top right, #D27979, #40B6BF);
 }
 
+.header {
+    text-align: center;
+}
+
+.header-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7vw;
+    color: #dd4542;
+}
 
 .responsive-image {
     height: auto;
     max-width: 100%;
 }
 
-
+.sub-title {
+    color: orange;
+    font: bolder;
+    font-size: 1.5vw;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
 .text-item {
     color: #dd9242;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -31,40 +79,7 @@
 }
 
 
-
-.content-header, .featured-proj {
-    text-align: center;
-}
-
-
-.header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-
-.current-projects {
-    margin-top: 30px;
-}
-
-.current-proj-hdr {
-    color: #043899;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 5vw;
-    text-align: center;}
-
-.featured-proj {
-    margin: 20px 0;
-}
-
-.featured-text {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.sub-title {
-    font: bolder;
-}
+/*MEDIA QUERIES*/
 
 @media screen and (min-width: 480px) {
     .text-item {
@@ -84,8 +99,8 @@
     .header {
         justify-content: space-between;
         margin: 0 auto 30px;
-        text-align: left;
     }
+
     .header-text {
         text-align: right;
     }
@@ -128,4 +143,46 @@
 
 
 
+.stacy {
+    margin-top: 25px;
+    text-align: center;
 
+    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 10s; /* Firefox < 16 */
+        -ms-animation: fadein 10s; /* Internet Explorer */
+         -o-animation: fadein 10s; /* Opera < 12.1 */
+            animation: fadein 8s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }   
