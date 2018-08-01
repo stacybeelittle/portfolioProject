@@ -48,17 +48,21 @@ hover effect on project names, also link to proj in name
     color: #dd4542;
 }
 
+.header-text {
+    position: absolute;
+}
+
 .responsive-image {
     height: auto;
     max-width: 100%;
 }
 
 .sub-title {
-    color: orange;
+    color: rgb(203, 242, 243);
     font: bolder;
     font-size: 1.5vw;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid rgb(243, 235, 220); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -72,7 +76,7 @@ hover effect on project names, also link to proj in name
 }
 
 .text-item-header {
-    color: #dd4542;
+    color: #0c0101;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10vw;
     text-align: center;
@@ -182,7 +186,9 @@ hover effect on project names, also link to proj in name
     to { width: 100% }
 }
 
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: orange; }
-      }   
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
