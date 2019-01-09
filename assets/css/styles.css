@@ -1,31 +1,17 @@
 *:before, *:after {
     box-sizing: border-box;
-    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     margin: 0;
     padding: 0;
 }
-/*notes -
-one hard pulse of header-name
-hover effect on project names, also link to proj in name
-4 color animation effect on 'current projects'
-*/
 
-.content-header, .featured-proj {
+.featured-proj {
     text-align: center;
 }
 
 .current-projects {
-    margin-top: 30px;
+    margin-top: 10px;
 }
-
-.current-proj-hdr {
-    color: #020914;
-    font-family: 'Dancing Script', cursive;
-    font-size: 5vw;
-    text-align: center;
-}
-
-
 
 .featured-proj {
     margin: 20px 0;
@@ -38,27 +24,33 @@ hover effect on project names, also link to proj in name
 }
 
 .gradient {
-    background: linear-gradient(to top right, #D27979, #40B6BF);
+    background: radial-gradient( #fff, #000);
 }
 
 .header {
+    flex-direction: column;
     text-align: center;
 }
 
 .header-name {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'IM Fell Double Pica', serif;
     font-size: 7vw;
-    color: #dd4542;
+    color: #800000;
+    margin-bottom: 10%;
+    text-shadow: 1px 1px black;
 }
 
 .header-text {
-    position: absolute;
+    margin-top: 20%;
+    position: relative;
 }
 
 .responsive-image {
     height: auto;
     max-width: 100%;
 }
+
+/* subtitle animations*/
 
 .sub-title {
     color: rgb(203, 242, 243);
@@ -71,18 +63,47 @@ hover effect on project names, also link to proj in name
     letter-spacing: .15em; /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+
+.sub-two {
+    animation: typing 4.2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.sub-three {
+    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.sub-four {
+    animation: typing 5.3s steps(40, end), blink-caret .75s step-end infinite;
+}
 .text-item {
     color: #dd9242;
-    font-family:  'Dancing Script', cursive;
+    font-family: 'IM Fell Double Pica', cursive;
     font-size: 7vw;
     font-weight: bold;
 }
 
 .text-item-header {
     color: #0c0101;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'IM Fell Double Pica', serif;
     font-size: 10vw;
     text-align: center;
+}
+
+.projects-link{
+    padding-left: 10vw;
+    color: black;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    text-shadow: .3px .3px gray;
+    opacity: 0;
+    animation: fadein 4s ease-in forwards;
+    animation-delay: 2.5s;
+
+}
+
+.projects-link-box{
+    padding-top: 2vw;
 }
 
 
@@ -150,16 +171,27 @@ hover effect on project names, also link to proj in name
 
 
 
+/*header text effect*/
+
 .stacy {
     margin-top: 25px;
     text-align: center;
+    opacity: 0;
+    animation: in 4s ease-out forwards;
+    animation-delay: 1s;
 
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 10s; /* Firefox < 16 */
-        -ms-animation: fadein 10s; /* Internet Explorer */
-         -o-animation: fadein 10s; /* Opera < 12.1 */
-            animation: fadein 8s;
 }
+
+@keyframes in{
+    0%{
+      letter-spacing: -8px;
+      opacity: 0;
+    }
+    100%{
+      letter-spacing: 8px;
+      opacity: 1;
+    }
+  }
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -193,5 +225,9 @@ hover effect on project names, also link to proj in name
     from, to { border-color: transparent }
     50% { border-color: orange; }
 }
+
+
+
+
 
 
