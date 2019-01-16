@@ -5,26 +5,21 @@
     padding: 0;
 }
 
-.featured-proj {
-    text-align: center;
+#html {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: flex;
+    overflow: hidden;
 }
+
+
 
 .current-projects {
     margin-top: 10px;
 }
 
-.featured-proj {
-    margin: 20px 0;
-    width: 33.3%;
-}
-
-.featured-text {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
 .gradient {
-    background: radial-gradient( #fff, #000);
+    background: radial-gradient( #fff, #000) no-repeat center center fixed;
 }
 
 .header {
@@ -35,7 +30,7 @@
 .header-name {
     font-family: 'IM Fell Double Pica', serif;
     font-size: 7vw;
-    color: #800000;
+    color: #4d0000;
     margin-bottom: 10%;
     text-shadow: 1px 1px black;
 }
@@ -103,7 +98,7 @@
 }
 
 .projects-link-box{
-    padding-top: 2vw;
+    padding-top: .5vw;
 }
 
 
@@ -188,7 +183,7 @@
       opacity: 0;
     }
     100%{
-      letter-spacing: 8px;
+      letter-spacing: 9px;
       opacity: 1;
     }
   }
