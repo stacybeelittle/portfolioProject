@@ -34,9 +34,11 @@ main {
 .home-button {
     padding-top: 15px;
     padding-left: 50px;
-    font-size: .75em;
+    position:absolute; top:0; right:0;
+    font-size: em;
     color: #000;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .featured-proj {
@@ -77,27 +79,28 @@ main {
     }
 }
 
-
-
     .header-text {
         text-align: right;
     }
+
     .header, 
     .featured {
     display: flex;
     margin: 0 auto;
     max-width: 1240px;
     }
+
     .featured {
         margin: 30px auto 0;
     }
+
     .featured-proj {
         margin: 20px 20px 20px 0;
     }
     .featured-proj:last-child {
         margin-right: 0;
     }
-}
+
 
 @media screen and (min-width: 830px ) {
     .text-item {
