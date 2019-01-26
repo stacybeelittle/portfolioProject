@@ -23,18 +23,21 @@ main {
 }
 
 .header {
+    display: flex;
+    flex-direction: flex;
     background: rgb(155, 153, 153);
     letter-spacing: 10px;
     font-weight: bolder;
     position: fixed;
     width: 100%;
-    padding-left: 600px;
+    padding-left: 604px;
 }
 
 .home-button {
     padding-top: 15px;
     padding-left: 50px;
-    position:absolute; top:0; right:0;
+    padding-right: 2em;
+    position: absolute; top:0; right:0;
     font-size: em;
     color: #000;
     letter-spacing: 2px;
@@ -42,10 +45,19 @@ main {
 }
 
 .featured-proj {
-    flex-wrap: flex;
+    display: flex;
     flex-direction: row;
-    max-width: 33%;
+    flex-wrap: flex;
+    height: 100%;
+    justify-content: space-around;
+    padding-right: 1.5em;
+    padding-top: 2em;
     text-align: center;
+}
+
+.single-proj {
+    padding: 1em;
+    width: 33%;
 }
 
 .featured-text {
