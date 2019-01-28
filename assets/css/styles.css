@@ -61,6 +61,7 @@
 .sub-four {
     animation: typing 5.3s steps(40, end), blink-caret .75s step-end infinite;
 }
+
 .text-item {
     color: #dd9242;
     font-family: 'IM Fell Double Pica', cursive;
@@ -75,9 +76,9 @@
     text-align: center;
 }
 
-.projects-link{
+.links{
     padding-left: 10vw;
-    color: black;
+    color: #000;
     font-family: 'IM Fell Double Pica', serif;
     font-size: 2.5vw;
     text-decoration: none;
@@ -85,10 +86,11 @@
     opacity: 0;
     animation: fadein 4s ease-in forwards;
     animation-delay: 2.5s;
-
 }
 
-.projects-link-box{
+.bottom-links{
+    display: flex;
+    flex-direction: row;
     padding-top: .5vw;
 }
 
