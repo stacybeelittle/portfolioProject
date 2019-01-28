@@ -1,6 +1,6 @@
 *:before, *:after {
     box-sizing: border-box;
-    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Montserrat Alternates', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -15,6 +15,7 @@ html,body {
 
 main {
     background-color: lightgray;
+    font-family: 'Montserrat Alternates', sans-serif;
     height: 100%;
     padding-top: 7em;
     overflow: hidden;
@@ -25,10 +26,12 @@ main {
 .header {
     display: flex;
     flex-direction: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
     background: rgb(155, 153, 153);
     letter-spacing: 10px;
-    font-weight: bolder;
+    font-size: 1.5em;
     position: fixed;
+    height: 15%;
     width: 100%;
     padding-left: 604px;
 }
@@ -38,7 +41,7 @@ main {
     padding-left: 50px;
     padding-right: 2em;
     position: absolute; top:0; right:0;
-    font-size: em;
+    font-size: 1em;
     color: #000;
     letter-spacing: 2px;
     text-decoration: none;
@@ -62,8 +65,7 @@ main {
 
 .featured-text {
     flex-wrap: flex;
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .sticky {
@@ -90,10 +92,6 @@ main {
         width: 100%;
     }
 }
-
-    .header-text {
-        text-align: right;
-    }
 
     .header, 
     .featured {
@@ -134,3 +132,14 @@ main {
     } 
 }
 
+@media screen and (max-width: 850px) {
+    .featured-proj {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: flex;
+    }
+
+    .single-proj {
+        width: 100%;
+    }
+}
