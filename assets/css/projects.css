@@ -49,8 +49,7 @@ main {
 
 .featured-proj {
     display: flex;
-    flex-direction: row;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     height: 100%;
     justify-content: space-around;
     padding-right: 1.5em;
@@ -59,8 +58,12 @@ main {
 }
 
 .single-proj {
-    padding: 1em;
-    width: 33%;
+    background-color: rgb(252, 247, 240);
+    margin: 10px;
+    flex: 1 1 calc(33.33% - 30px);
+    border: 1.5px solid rgb(112, 3, 3);
+    text-align: center;
+    max-width: 33.33%;
 }
 
 .featured-text {
@@ -77,6 +80,7 @@ main {
 .sticky + .main {
     padding-top: 102px;
 }
+
 
 @media screen and (min-width: 480px) {
 
