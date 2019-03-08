@@ -14,7 +14,10 @@ html,body {
     position: absolute;
     }
 
-
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
 main {
     overflow: visible;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -38,14 +41,13 @@ main {
     position: fixed;
     height: 15%;
     width: 100%;
-    padding-left: 604px;
     z-index: 1;
 }
 
 .home-button {
     padding-top: 19px;
     padding-left: 0px;
-    padding-right: 30em;
+    padding-right: 1.5em;
     position: absolute; top:0; right:0;
     font-size: 1em;
     color: #000;
