@@ -73,15 +73,24 @@
     padding-top: 2vw;
 }
 
+.link {
+    font-size: 4vw;
+}
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .header-text {
-        margin-top: 35vw;
+        margin-top: 33vw;
     }
     .header-name{
-        font-size: 27vw;
+        font-size: 25vw;
+    }
+    .bottom-links{
+
+    }
+    .links {
+        font-size: 5vw;
     }
 }
 
@@ -92,6 +101,9 @@
     .header-name{
         font-size: 25vw;
     }
+    .links {
+        font-size: 4.5vw;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -100,6 +112,9 @@
     }
     .header-name{
         font-size: 28vw;
+    }
+    .links {
+        font-size: 6vw;
     }
 }
 /*
