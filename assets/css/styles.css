@@ -11,6 +11,7 @@
 
 .gradient {
     background: radial-gradient( #fff, #000) no-repeat center center fixed;
+    align-items: center;
 }
 
 .header {
@@ -19,16 +20,19 @@
 }
 
 .header-name {
+    display: table-cell;
     font-family: 'IM Fell Double Pica', serif;
-    font-size: 7vw;
+    font-size: 9vw;
     color: #4d0000;
     margin-bottom: 10%;
     text-shadow: 1px 1px black;
+    vertical-align: middle;
 }
 
 .header-text {
+    display: table;
     margin-top: 20%;
-    position: relative;
+    width: 100%;
 }
 
 .responsive-image {
@@ -36,31 +40,6 @@
     max-width: 100%;
 }
 
-/* subtitle animations*/
-
-.sub-title {
-    color: rgb(203, 242, 243);
-    font: bolder;
-    font-size: 1.5vw;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(243, 235, 220); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-.sub-two {
-    animation: typing 4.2s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-.sub-three {
-    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-.sub-four {
-    animation: typing 5.3s steps(40, end), blink-caret .75s step-end infinite;
-}
 
 .text-item {
     color: #dd9242;
@@ -91,62 +70,39 @@
 .bottom-links{
     display: flex;
     flex-direction: row;
-    padding-top: .5vw;
+    padding-top: 2vw;
 }
 
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 480px) {
-    .text-item {
-        font-size: 4vw;
-    }
-    
-    .text-item-header {
-        font-size: 6vw;
-    }
-
-    .featured-img {
-        width: 100%
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .header {
-        justify-content: space-between;
-        margin: 0 auto 30px;
-    }
-
+@media screen and (max-width: 800px) {
     .header-text {
-        text-align: right;
+        margin-top: 35vw;
     }
-    .header, 
-    .featured {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1240px;
-    }
-    .featured {
-        margin: 30px auto 0;
-    }
-    .featured-proj {
-        margin: 20px 20px 20px 0;
-    }
-    .featured-proj:last-child {
-        margin-right: 0;
+    .header-name{
+        font-size: 27vw;
     }
 }
 
-@media screen and (min-width: 830px ) {
-    .text-item {
-        font-size: 2vw;
+@media screen and (max-width: 575px) {
+    .header-text {
+        margin-top: 32vw;
     }
-    
-    .text-item-header {
-        font-size: 4vw;
-    } 
+    .header-name{
+        font-size: 25vw;
+    }
 }
 
+@media screen and (max-width: 400px) {
+    .header-text {
+        margin-top: 35vw;
+    }
+    .header-name{
+        font-size: 28vw;
+    }
+}
+/*
 @media screen and (min-width: 1300px) {
     .text-item {
         font-size: 1vw;
