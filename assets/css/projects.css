@@ -102,9 +102,10 @@ main {
 }
 
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
 
     .header{
+        height: 10%;
         font-size: 2vw;
     }
 
