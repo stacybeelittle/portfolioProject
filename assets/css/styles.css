@@ -21,7 +21,7 @@
 
 .header-name {
     display: table-cell;
-    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 9vw;
     color: #4d0000;
     margin-bottom: 10%;
@@ -43,14 +43,14 @@
 
 .text-item {
     color: #dd9242;
-    font-family: 'IM Fell Double Pica', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 7vw;
     font-weight: bold;
 }
 
 .text-item-header {
     color: #0c0101;
-    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 10vw;
     text-align: center;
 }
@@ -58,7 +58,7 @@
 .links{
     padding-left: 10vw;
     color: #000;
-    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5vw;
     text-decoration: none;
     text-shadow: .3px .3px gray;
